@@ -34,9 +34,20 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto list-group">
+                    <ul class="navbar-nav mr-2 list-group">
                         <li class="list-group-item">
                         <a href="{{route('post.create')}}">Create new post</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav list-group">
+                        <li class="list-group-item">
+                        <a href="{{route('category.create')}}">Create new category</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav list-group">
+                        <li class="list-group-item">
+                        <a href="{{route('categories')}}">View categories</a>
                         </li>
                     </ul>
 
