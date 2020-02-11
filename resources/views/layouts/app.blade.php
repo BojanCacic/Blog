@@ -36,7 +36,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto list-group">
                         <li class="list-group-item">
-                            <a href="/post/create">Create new post</a>
+                        <a href="{{route('post.create')}}">Create new post</a>
                         </li>
                     </ul>
 

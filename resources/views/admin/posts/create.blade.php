@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h1 class="card-title">Create a new post</h1>
 
-                    <form action="/post/store" method="post">
+                    <form action="{{route('post.create')}}" method="post">
                         {{csrf_field()}}
                         <div class="form-group">
                             <label for="title">Title</label>
