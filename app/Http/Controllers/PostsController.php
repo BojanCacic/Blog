@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use Session;
 use App\Post;
 use App\Category;
@@ -64,6 +65,7 @@ class PostsController extends Controller
             'content' => $request -> content,
             'featured' => 'uploads/posts'.$featured_new_name,
             'category_id' => $request -> category_id,
+            'slug' => Str::slug($request->title)
         ]);
 
         Session::flash('success', 'Post created succesfully');
