@@ -104,7 +104,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
     @if(Session::has('success'))
-        toastr.success('{{ Session::get('success')}}');
+        toastr.success('{{ Session::get('success')}}')
+    @endif
+
+    @if(Session::has('info'))
+        toastr.info('{{ Session::get('info')}}')
     @endif
 </script>
 </body>
