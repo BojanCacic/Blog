@@ -24,9 +24,9 @@
                     
                      @foreach ($posts as $post)
                      <tr>
-                         <td>
-                             image
-                         </td>
+                        <td>
+                        <img src="{{ asset($post->featured) }}" alt="nema slike" style="width: 100px"></a> 
+                        </td>
                          <td>
                              {{$post->title}}
                          </td>
