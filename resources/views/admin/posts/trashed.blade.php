@@ -37,7 +37,7 @@
                              Edit
                          </td>
                          <td>
-                            <a href="{{ route('post.delete', ['id' => $post->id]) }}" class="btn btn-success">Restore</a>
+                            <a href="{{ route('post.restore', ['id' => $post->id]) }}" class="btn btn-success">Restore</a>
                          </td>
                          <td>
                             <a href="{{ route('post.kill', ['id' => $post->id]) }}" class="btn btn-danger">Delete</a>
