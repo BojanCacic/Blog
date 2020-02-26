@@ -50,7 +50,19 @@
 
                     <ul class="navbar-nav list-group">
                         <li class="list-group-item">
+                        <a href="{{route('tag.create')}}">Create new tag</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav list-group">
+                        <li class="list-group-item">
                         <a href="{{route('categories')}}">View categories</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav list-group">
+                        <li class="list-group-item">
+                        <a href="{{route('tags')}}">View tags</a>
                         </li>
                     </ul>
 

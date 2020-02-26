@@ -21,24 +21,29 @@
                 </thead>
 
                 <tbody>
-                    
-                     @foreach ($posts as $post)
-                     <tr>
-                        <td>
-                        <img src="{{ asset($post->featured) }}" alt="nema slike" style="width: 100px"></a> 
-                        </td>
-                         <td>
-                             {{$post->title}}
-                         </td>
-                         <td>
-                            <a href="{{ route('post.edit', ['id' => $post->id]) }}" class="btn btn-info">Edit</a>
-                         </td>
-                         <td>
-                         <a href="{{ route('post.delete', ['id' => $post->id]) }}" class="btn btn-danger">Trash</a>
-                         </td>
-                     </tr>
-                         
-                     @endforeach                 
+                    @if($posts->count() > 0)
+                        @foreach ($posts as $post)
+                        <tr>
+                            <td>
+                            <img src="{{ asset($post->featured) }}" alt="nema slike" style="width: 100px"></a> 
+                            </td>
+                            <td>
+                                {{$post->title}}
+                            </td>
+                            <td>
+                                <a href="{{ route('post.edit', ['id' => $post->id]) }}" class="btn btn-info">Edit</a>
+                            </td>
+                            <td>
+                            <a href="{{ route('post.delete', ['id' => $post->id]) }}" class="btn btn-danger">Trash</a>
+                            </td>
+                        </tr>
+                            
+                        @endforeach
+                    @else 
+                        <tr>
+                            <th colspan="5">No trashed posts.</th>
+                        </tr>
+                    @endif
                 </tbody>
             </table>
         </div>
