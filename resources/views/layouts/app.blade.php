@@ -77,19 +77,19 @@
                         <a href="{{route('posts.trashed')}}">Trashed posts</a>
                         </li>
                     </ul>
-
-                    <ul class="navbar-nav list-group">
-                        <li class="list-group-item">
-                        <a href="{{route('users')}}">Users</a>
-                        </li>
-                    </ul>
-
+                    
+                        <ul class="navbar-nav list-group">
+                            <li class="list-group-item">
+                            <a href="{{route('users')}}">Users</a>
+                            </li>
+                        </ul>
+                    
                     <ul class="navbar-nav list-group">
                         <li class="list-group-item">
                         <a href="{{route('user.create')}}">New users</a>
                         </li>
                     </ul>
-
+                    
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->

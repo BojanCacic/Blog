@@ -7,8 +7,15 @@ use App\Profile;
 use App\User;
 use Illuminate\Http\Request;
 
+
+
 class UsersController extends Controller
 {
+    //authorisation only admin can access this controller
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
     /**
      * Display a listing of the resource.
      *
