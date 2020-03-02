@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
         App\Profile::create([
             'user_id' => '1',
             'about' => 'lorem ipsum',
-            'avatar' => 'upload/avatar/1.png'
+            'avatar' => 'uploads/avatar/1.png'
         ]);
     }
 }
