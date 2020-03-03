@@ -158,6 +158,10 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'] ,function(){
         'uses' => 'ProfilesController@index',
         'as' => 'user.profile'
     ]);
+    Route::get('user/profile/{id}',[
+        'uses' => 'UsersController@destroy',
+        'as' => 'user.delete'
+    ]);
     Route::post('user/profile/update',[
         'uses' => 'ProfilesController@update',
         'as' => 'user.profile.update'

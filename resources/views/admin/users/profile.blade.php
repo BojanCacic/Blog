@@ -29,7 +29,7 @@
                         </div> 
                         <div class="form-group">
                             <label for="name">Upload new avatar</label>
-                            <input type="file" class="form-control" name="avatar">
+                            <input type="file" class="form-control" name="avatar" enctype="multipart/form-data">
                         </div> 
                         <div class="form-group">
                             <label for="about">About you</label>
