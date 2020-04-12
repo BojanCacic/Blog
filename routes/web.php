@@ -176,3 +176,4 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'] ,function(){
     ])->middleware('admin');
 
 });
+

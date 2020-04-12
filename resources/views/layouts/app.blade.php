@@ -94,13 +94,13 @@
                         <a href="{{route('user.profile')}}">My profile</a>
                         </li>
                     </ul>
-                    @if(Auth::user()->admin)
+                    
                         <ul class="navbar-nav list-group">
                             <li class="list-group-item">
                             <a href="{{route('settings')}}">Settings</a>
                             </li>
                         </ul>
-                    @endif
+                   
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
